@@ -4,136 +4,172 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawsome.com/a076d05399.js" crossorigin="anonymous">
-    </script>
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         
         body{
-            background-color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+        .one{
+            width: 100%;
+            height: 70px;
+            
+        }
+        .one img{
+            width: 20%;
+            height: 50px;
+            margin: 20px 0px 0px 150px;
+            float: left;
+        }
+        .one h3{
+            float: left;
+            margin-left: 200px ;
+        }
+        .one input{
+            padding: 5px;
+            margin: 30px 0px 0px 150px;
+        }
+        .one button{
+            padding: 5px;
+            margin: -5px;
         }
         .two{
-            background-color: white
+            background-color: lightblue;
+            height: 65px;
             
-
         }
-        .two input{
-            float: right;
-            border: 1px solid black;
-            border-radius: 09px;
+        .two li{
+            display: inline;
+            font-size: 25px;
+            
+            margin: 15px 40px;
+            float: left;
         }
-        .two img{
-            margin-left: 200px;
-            width: 300px;
-            height: 100px;
+        a{
+            text-decoration: none;
         }
+        .two button{
+            color: white;
+            background-color: blue;
+            padding: 10px;
+            margin: 13px 0px 0px 80px;
+            border-radius: 10px;
+        }
+        
         .three img{
-            width: 1350px;
+            width: 100%;
             height: 500px;
+            position: relative;
+        }
+        .head{
+            
+            position: absolute;
+            width: 40%;
+            height: 200px;
+            margin: -300px 0px 20px 750px;
+            color: green;
         }
         .four{
-            background-color: white;
-            margin-top: 30px;
-            
+            background-color: gray;
+            width: 100%;
+            height: 600px;
+            margin-top: -20px;
         }
-        .four li {
-            display: inline;
-            padding: 10px 60px ;
-            border-radius: 20px;
-            border: 3px double red;
-
-        }
-        .five{
-            background-color: blue;
-            
-        }
-        .five img{
-            padding-left: 100px;
-            width: 300px;
-            height: 200px;
-        }
-        .fiveone , .fivetwo{
-            float: left;
-        }
-        .six img{
-            width: 400px;
+        .last{
+            width: 100%;
             height: 250px;
-            padding-left:180px ;
-            margin-top: 20px;
-        }
-        .sixone{
-            float: left;
-        }  
-        h2{
-            margin-left: 100px;
-        }  
-        .six h2{
-            color:white;
-            width: 120px;
-            text-align: center;
-            padding: 10px;
             background-color: red;
-            border: 5px solid blueviolet;
-            border-radius: 30px;
-            animation-name: box;
-            animation-duration: 10s;
-            animation-iteration-count:10;
-            animation-direction:alternate;
-        }
-        @keyframes box{
-            0%{ background-color: yellow;}
-            25%{background-color: black}
-            50%{ background-color: brown;}
-            75%{background-color: blue;}
-            100%{ background-color: green;}
+            color: gray;
         }
     </style>
 </head>
 <body>
     <div id="one">
         <div class="one">
-            <div class="two">
-                <img src="travel-concept-with-landmarks.jpg">
-                <input type="search" placeholder="Search here">
-            </div>
-            <div class="four">
-                    <ol>
-                        <li>Hotels</li>
-                        <li>Flights</li>
-                        <li>Vacations</li>
-                        <li>Hot Deals</li>
-                        <li>Guides</li>
-                        <li style="margin-left: 70px;" >Today Offer</li>
-                    </ol>
-                </div>
+            <img src="travel-concept-with-landmarks.jpg">
+            <a href="#"><h3><i class="fas fa-phone"></i>Call 24/7 Support<br>+000-000-0000</h3></a>
+            <input type="search" placeholder="Search here"><button type="button"><i class="fas fa-search"></i></button>
+        </div>    
+        <div class="two">
+            <ul>
+                <a href="#"><li>Hotels</li></a>
+                <a href="#"><li>Flights</li></a>
+                <a href="#"><li>Vacations</li></a>
+                <a href="#"><li>Hot Deeals</li></a>
+                <a href="#"><li>Guides</li></a>
+            </ul>
+            <a href="#"><button type="button">Sign Up</button></a>
+            <a href="#"><button type="button">My Vacation</button></a>
         </div>
-            <div class="three">
-                
-                <img src="beautiful-tropical-beach-sea.jpg">
+        <div class="three">
+            <img src="beautiful-tropical-beach-sea.jpg">
+            <div class="head">
+                <h1 style="margin-left: 20px;">WELCOME TO YOUR VACATION</h1>
+                <p style="text-align: center;">Enjoy beauty of the world. We offers Budget friendly<br>quality family holidays arimarily through vacation<br>ownership memberships</p>
+                <i href="#"><button type="button" style="padding: 7px 50px; margin: 10px 0px 0px 180px; background-color: gray;">Book Now</button></i>
             </div>
-            <div class="five">
-                <h2>Popular Hotels</h2>
-               <div class="fiveone">
-                 <img src="travel-concept-with-landmarks.jpg">
-               </div>
-               <div class="fivetwo">
-                 <img src="travel-concept-with-landmarks.jpg">
-               </div>
-                <div class="fivethree">
-                    <img src="travel-concept-with-landmarks.jpg">
+        </div>
+        <div class="four">
+            <div class="five" style="width: 100%;height: 300px;">
+                <h1 style="margin-left: 150px;">Popular Hotels</h1>
+                <div class="fourone" style="float: left; width: 300px; height: 200px; background-color: white;margin-left: 150px;">
+                    <img src="beautiful-tropical-beach-sea.jpg" width="300px" height="150px">
+                    <h4 style="margin: 5px 15px;">Hotel Mariott</h4>
+                    <p style="margin: 0px;">Aus</p>
+                    <button type="button" style="float: right;margin-top: -40px; padding: 5px;color: white;background-color: blue;">Rs.18,999</button>
                 </div>
-                <div class="six">
-                    <h2>Hot deals</h2>
-                   <div class="sixone">
-                       <img src="travel-concept-with-landmarks.jpg">
-                   </div>
-                   <div class="sixtwo">
-                      <img src="travel-concept-with-landmarks.jpg">
-                   </div>
+                <div class="fourtwo" style=" float: left; width: 300px; height: 200px; background-color: white;margin-left: 50px;">
+                    <img src="beautiful-tropical-beach-sea.jpg" width="300px" height="150px">
+                    <h4 style="margin: 5px 15px;">Hotel Mariott</h4>
+                    <p style="margin: 0px;">Aus</p>
+                    <button type="button" style="float: right;margin-top: -40px; padding: 5px;color: white;background-color: blue;">Rs.18,999</button>
                 </div>
-                <h2>Latest Blogs</h2>
-           </div>
-        
+                <div class="fourthree" style="float: left; width: 300px; height: 200px; background-color: white;margin-left: 50px;">
+                    <img src="beautiful-tropical-beach-sea.jpg" width="300px" height="150px">
+                    <h4 style="margin: 5px 15px;">Hotel Mariott</h4>
+                    <p style="margin: 0px;">Aus</p>
+                    <button type="button" style="float: right;margin-top: -40px; padding: 5px;color: white;background-color: blue;">Rs.18,999</button>
+                </div>
+            </div>
+            <div class="six">
+                <h1 style="margin-left: 150px;">Hot Deaels</h1>
+                <img src="beautiful-tropical-beach-sea.jpg" width="450px" height="200px" style="margin-left: 150px;">
+                <img src="beautiful-tropical-beach-sea.jpg" width="450px" height="200px"style="margin-left: 100px;">
+            </div>
+        </div>
+        <div class="last">
+            <div class="company" style="float: left; margin-left: 150px;">
+                <h1>Company</h1>
+                <ol>
+                    <li><a href="#">About the company</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Address</a></li>
+                </ol>
+            </div>
+            <div class="support"style="float: left; margin-left: 10px">
+                <h1>Customer Support</h1>
+                <ol>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ol>    
+            </div>
+            <div class="follow"style="float: left; margin-left: 40px">
+                <h1>Follow us</h1>
+                <i class="fas fa-facebook"></i>
+                <i class="fas fa-twitter"></i>
+                <i class="fas fa-indeed"></i>
+                <i class="fas fa-youtube"></i>
+                <i class="fas fa-google"></i>
+            </div>
+            <div class="book" style="float: left; margin-left: 30px;">
+                <h1>Don't miss our deals and offers</h1>
+                <input type="email" placeholder="Enter your mail id" style="padding: 5px;"><button type="button" style="padding: 5px;">Sign In</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
