@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Envy Travels</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body{
             margin: 0px;
             padding: 0px;
         }
         #project{
-            background-color: aqua;
-            width: 1000px;
-            height: 1000px;
-            margin: 10px 170px 10px 170px;
+
+            width: 900px;
+            height: 910px;
+            margin: 10px 170px;
         }
         .one{
             width: 100%;
@@ -32,7 +33,7 @@
             font-size: 30px;
             text-shadow: 3px 2px white;
             
-            margin: 7px 0px 0px 100px;
+            margin: 7px 0px 0px 70px;
             
             float: left;
         }
@@ -43,7 +44,6 @@
         .two{
             width: 100%;
             height: 300px;
-            background-color: red;
         }
         .two img{
             width: 100%;
@@ -51,8 +51,78 @@
         }
         .three{
             width: 100%;
-            height: 100px;
-            background-color: brown;
+            height: 50px;
+            background-color: white;
+            
+        }
+        .threeone{
+            background-color: lightskyblue;
+            width: 80%;
+        }
+        .three li{
+            display: inline;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px 30px;
+            margin-left: 20px;
+            background-color: lightgreen;
+        }
+        a{
+            text-decoration: none;
+        }
+        .threetwo{
+            width: 20%;
+        }
+        .threetwo h1{
+            text-align: center;
+            margin: 1px;
+            border: 5px  solid ;
+            animation-name: offer;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes offer{
+            0%{background-color: salmon;color: black; border-color: blue;}
+            25%{background-color: purple;color: white;border-radius: 15px;border-color: gray;}
+            50%{background-color: yellow;color: black;border-radius: 30px;border-color: brown;}
+            75%{background-color: maroon;color: white;border-radius: 15px;border-color: darkorange;}
+            100%{background-color: green;color: black;border-color: black;}
+        }
+        .four{
+            width: 100%;
+            height: 300px;
+            background:radial-gradient(lightblue,lightgreen);
+            border: 1px solid black;
+        }
+        .fourone{
+            background-color: lightgreen;
+            width: 20%;
+            height: 300px;
+            float: left;
+            border-right: 1px solid black;
+        }
+        .fourtwo{
+            width: 79%;
+            height: 300px;
+            float: right;
+        }
+        .four img{
+            height:200px;
+            width: 40%;
+        }
+        .last{
+            width: 100%;
+            height: 210px;
+            background-color:lightblue;
+            border: 1px solid black;
+            border-top: none;
+        }
+        .last h1{
+            color: gray;
+        }
+        .last li{
+        list-style: none;
+        color: blue;
         }
     </style>
 </head>
@@ -68,13 +138,72 @@
             <img src="WhatsApp Image 2023-06-16 at 9.56.00 AM.jpeg">
         </div>
         <div class="three">
-            <ul>
-                <li><a href="#">Home</a></li>
+            <div class="threeone" style="float: left">
+                <ul>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">Trips</a></li>
-                    <li><a href="#">Reviews</a></li>
+                     <li><a href="#">Reviews</a></li>
                     <li><a href="#">Help</a></li>
                     <li><a href="#">Contact</a></li>
-            </ul>
+                </ul>
+            </div>
+            <div class="threetwo" style="float: right;">
+               <h1>OFFERS</h1> 
+            </div>
+        </div>
+        <div class="four">
+            <div class="fourone" style="float: left;">
+            <select id="type" style="padding: 10px 30px;margin: 55px 15px;">
+                <option>Trip Types</option>
+                <option>Solo Trip</option>
+                <option>Couple Trip</option>
+                <option>Family Trip</option>
+            </select>
+            </div>
+            <div class="fourtwo">
+                <h3 style="text-decoration: underline; color: purple;">PROVIDES OF ENVY TRAVELS :-</h3>
+            <img src="WhatsApp Image 2023-06-16 at 10.02.10 AM.jpeg" style="margin: 5px 60px;float: left;">
+            
+            <ol style="color: blue;">
+                <li>SAFETY will be must</li>
+                <li>24x7 services</li>
+                <li>comlimantory of 2 coffee or tea per day</li>
+                <li>comlimantory of morning breakfast</li>
+                <li>Rise the any complaint-solve within 60minutes </li>
+            </ol>
+            <button style="padding: 10px 20px; margin: 30px 0px;">Details</button>
+            <button style="padding: 10px 20px;">Book Now</button>
+            </div>
+        </div>
+        <div class="last">
+            <div class="company" style="float: left;">
+                <h1>Company</h1>
+                <ul>
+                    <li><a href="#">About the company</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Address</a></li>
+                </ul>
+            </div>
+            <div class="support"style="float: left;">
+                <h1>Customer Support</h1>
+                <ol>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ol>    
+            </div>
+            <div class="follow"style="float: left; margin-left: 40px">
+                <h1>Follow us</h1>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-google"></i>
+            </div>
+            <div class="book" style="float: left; margin-left: 30px;">
+                <h1>Don't miss our deals and offers</h1>
+                <input type="email" placeholder="Enter your mail id" style="padding: 5px;"><button type="button" style="padding: 5px;">Sign In</button>
+            </div>
         </div>
     </div>
 </body>
