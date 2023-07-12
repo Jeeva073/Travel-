@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="age">
+    <button onclick="myFun()">check</button>
+    <div id="ex"></div>
+    <script>
+        function myFun(){
+            let age=document.getElementById("age").value;
+            let eligible=(age > 18)? "eligible":"not eligible";
+            document.getElementById("ex").innerHTML= eligible;
+        }
+    </script>
+</body>
+</html>
