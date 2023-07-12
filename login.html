@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .one{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form validation Example</h1>
+    <label for="name">Name:</label>
+    <input  id="name" type="text">
+    <p id=Name></p>
+    <label for="email">Email:</label>
+    <input id="email" type="email">
+    <p id="Email"></p>
+    <button type="button" onclick="myFun()">Submit</button>
+    <script>
+       function myFun(){
+            let name=document.getElementById("name").value;
+            element1=document.getElementById("Name");
+            let email=document.getElementById("email").value;
+            element2=document.getElementById("Email");
+            if(name==""){
+                document.getElementById("Name").innerHTML="Name is required";
+                element1.classList.add("one");
+            } 
+            if(email==""){
+                document.getElementById("Email").innerHTML="Email is required";
+                element2.classList.add("one");
+            }
+            
+           
+}
+    </script>
+</body>
+</html>
