@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMAZON</title>
+    <link href="style.css" rel="stylesheet" text="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        #body{
+            background-color: purple;
+        }
+        li{
+            display: inline;
+            margin-left: 30px;
+        }
+        li img{
+            border: 3px solid black;
+        }
+        .image{
+            width: 25%;
+            height: 250px;
+            border: 5px solid black;
+        }
+        .fun1{
+            color: red;
+        }
+        .fun2{
+            color: blue;
+        }
+        .fun3{
+            color: green;
+        }
+        .fun4{
+            color: yellow;
+        }
+        .fun5{
+            color: black;
+        }
+        .fun6{
+            color: orange;
+        }
+        .fun7{
+            color: silver;
+        }
+        .fun8{
+            color: brown;
+        }
+    </style>
+</head>
+<body>  
+    <div id="body">
+        <img src="WhatsApp Image 2023-07-16 at 11.15.55 PM.jpeg" id="image" class="image" style="margin: 60px 500px;">        
+        <p style="color: white;" class="display-6">People for search</p>
+        <ul>
+            <li><img src="WhatsApp Image 2023-07-16 at 9.20.41 PM.jpeg" width="100px"; height="100px"; onclick="fun1()"><li>
+            <li><img src="WhatsApp Image 2023-07-16 at 9.36.28 PM.jpeg" width="100px"; height="100px";  onclick="fun2()"><li>
+            <li><img src="WhatsApp Image 2023-07-16 at 9.36.29 PM (1).jpeg" width="100px"; height="100px";  onclick="fun3()"><li>
+            <li><img src="WhatsApp Image 2023-07-16 at 9.36.28 PM (1).jpeg" width="100px"; height="100px";  onclick="fun4()"><li>
+            <li><img src="WhatsApp Image 2023-07-16 at 9.36.30 PM (1).jpeg" width="100px";height="00px";  onclick="fun5()"><li>
+            <li><img src="WhatsApp Image 2023-07-16 at 9.36.29 PM.jpeg" width="100px";height="100px";  onclick="fun6()"><li>
+            <li><img src="WhatsApp Image 2023-07-16 at 9.36.30 PM.jpeg" width="100px";height="100px";  onclick="fun7()"><li>
+            <li><img src="WhatsApp Image 2023-07-16 at 9.38.53 PM.jpeg" width="100px";height="100px"; onclick="fun8()"><li>
+        </ul> 
+        <h2 style="color: white;margin-left: 300px;">BEST OFFER ON YOUR -<span id="fun">10% to 50%</span> Offer is closed soon</h2>
+    </div>
+    <script href="js/bootstrap.min.js">
+        function fun1(){
+            var img=document.getElementById("image");
+            img.src="WhatsApp Image 2023-07-16 at 9.20.41 PM.jpeg";
+            document.getElementById("fun").classList.add("fun1");
+            return;
+           }
+           function fun2(){
+            var img=document.getElementById("image");
+            img.src="WhatsApp Image 2023-07-16 at 9.36.28 PM.jpeg";
+            document.getElementById("fun").classList.add("fun2");
+            return;
+           }
+           function fun3(){
+            var img=document.getElementById("image");
+            img.src="WhatsApp Image 2023-07-16 at 9.36.29 PM (1).jpeg";
+            document.getElementById("fun").classList.add("fun3");
+            return;
+           }
+           function fun4(){
+            var img=document.getElementById("image");
+            img.src="WhatsApp Image 2023-07-16 at 9.36.28 PM (1).jpeg";
+            document.getElementById("fun").classList.add("fun4");
+            return;
+           }
+           function fun5(){
+            var img=document.getElementById("image");
+            img.src="WhatsApp Image 2023-07-16 at 9.36.30 PM (1).jpeg";
+            document.getElementById("fun").classList.add("fun5");
+            return;
+           }
+           function fun6(){
+            var img=document.getElementById("image");
+            img.src="WhatsApp Image 2023-07-16 at 9.36.29 PM.jpeg";
+            document.getElementById("fun").classList.add("fun6");
+            return;
+           }
+           function fun7(){
+            var img=document.getElementById("image");
+            img.src="WhatsApp Image 2023-07-16 at 9.36.30 PM.jpeg";
+            document.getElementById("fun").classList.add("fun7");
+            return;
+           }
+           function fun8(){
+            var img=document.getElementById("image");
+            img.src="WhatsApp Image 2023-07-16 at 9.38.53 PM.jpeg";
+            document.getElementById("fun").classList.add("fun8");
+            return;
+           }
+    </script>
+</body>
+</html>
