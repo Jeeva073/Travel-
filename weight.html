@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check</title>
+</head>
+<body>
+    <form id="checkForm">
+        <label for="weight">Enter your weight</label>
+        <input type="number" id="weight" required><br><br>
+        <label for="hight">Enter your hight</label>
+        <input type="number" id="hight" required><br><br>
+        <button type="submit">check</button>
+    </form>
+    <p id="yourWeight"></p>
+    <script>
+        document.getElementById("checkForm").addEventListener("submit",function(event){
+            event.preventDefault();
+            const weightInput=document.getElementById("weight");
+            const weight=parseFloat(weightInput.value);
+            const hightInput=document.getElementById("hight");
+            const hight=parseFloat(hightInput.value);
+            if((weight >=50 && weight<=150)&&(hight >=100 && hight<=200)){
+                document.getElementById("yourWeight").textContent="You are eligible ";
+            }else{
+                document.getElementById("yourWeight").textContent="You are not eligible ";
+            }
+            weightInput.value="";
+            hightInput.value="";
+        });
+    </script>
+</body>
+</html>
