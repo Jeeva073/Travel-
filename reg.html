@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>REGISTER NOW</title>
     <link href="style.css" rel="stylesheet" text="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -24,6 +24,9 @@
             border: none;
             width: 40%;
         }
+        .error{
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -33,14 +36,32 @@
             <p>Please fill in the form to create an account</p>
         </div>
             <label for="email"><b>Email</b></label>
-            <input type="text" id="emil" placeholder="Enter a Email" required>
+            <input type="text" id="email" placeholder="Enter a Email" required>
+            <span id="emailerror" class="error"></span><br>
             <label for="password"><b>password</b></label>
             <input type="password" id="password" placeholder="Enter a Password" required>
+            <span id="pwderror" class="error"></span><br>
             <label for="repeat"><b>Repeat Password</b></label>
             <input type="password" id="repeat" placeholder="Enter a Password" required>
+            <span id="repeaterror" class="error"></span><br>
             <input type="checkbox"><span> To agree with <a href="#">Terms & Condition.</a><br> 
-            <button type="submit">Register Now</button>
-        <script src="js/bootstrap.min.js"></script>
+            <button type="submit" onclick="myFun()">Register Now</button>
+        <script>
+            function myFun(){
+        var inputName=document.getElementById("email").value;
+        var inputPassword=document.getElementById("password").value;
+        var inputRepeat=document.getElementById("repeat").value;
+        if(inputName==""){
+            document.getElementById("emailerror").innerHTML="Username is required";
+        }
+        if(inputPassword==""){
+            document.getElementById("pwderror").innerHTML="Password is required";
+        }
+        if(inputRepeat!=inputPassword){
+            document.getElementById("repeaterror").innerHTML="Repeat password is error";
+        }
+       }
+        </script>
     </form>
 </body>
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORGET PASSWORD</title>
+    <link href="style.css" rel="stylesheet" text="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        form{
+            border: 3px solid gray;
+        }
+        input[type=text]{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0px;
+            border: 1px solid black;
+        }
+        button{
+            margin: 20px;
+            background-color: lightgreen;
+        }
+        .button{
+            background-color: purple;
+            color: white;
+            padding: 5px 10px;
+            margin: 10px 0px 10px 350px;
+            border: none;
+            width: 40%;
+        }
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form class="container mt-5">
+        <label for="email"><b>Email</b></label>
+        <input type="text" id="email" placeholder="Enter a register email" required>
+        <p id="one" class="error"></p>
+        <button type="button" onclick="myFun()">Get OTP</button>
+        <input type="number"><br>
+        <button type="submit" class="button" onclick="errorFun()">Login</button>
+    </form>
+    <script>        
+        function myFun(){
+            var a=document.getElementById("email").value;
+            if(a==""){            
+                document.getElementById("one").innerHTML="Enter your register mail";
+            }
+        }
+        function errorFun(){
+            var b=document.getElementById("email").value;
+            if(b==""){            
+        document.getElementById("one").innerHTML="Enter your register mail";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>LOGIN</title>
     <link href="style.css" rel="stylesheet" text="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -28,24 +28,38 @@
             border: none;
             width: 40%;
         }
+        .error{
+            color: red;
+        }
     </style>
 </head>
 <body>
     <form class="container">
         <div class="image" style="text-align: center;">
-            <img src="WhatsApp Image 2023-06-16 at 10.01.41 AM.jpeg"><br>
+            <img src="WhatsApp Image 2023-06-16 at 10.01.41 AM.jpeg">
         </div>   
             <label for="username"><b>Username</b></label>
             <input type="text" id="username" placeholder="Enter a Username" required>
+            <span id="nameerror" class="error"></span><br>
             <label for="password"><b>password</b></label>
             <input type="password" id="password" placeholder="Enter a Password" required>
+            <span id="pwderror" class="error"></span><br>
             <p>Forget <a href="#">password?</a></p>
-            <button type="submit">Login</button>
-            <p style="margin: 10px 0px 0px 500px;">New User <a href="#">Register Now</a></p>
+            <button type="submit" onclick="myFun()">Login</button>
+            <p style="margin: 10px 0px 10px 500px;">New User <a href="https://jeeva073.github.io/Travel-/reg">Register Now</a></p>
         </div>
     </form>
-    <script src="js/bootstrap.min.js">
-
+    <script>
+       function myFun(){
+        var inputName=document.getElementById("username").value;
+        var inputPassword=document.getElementById("password").value;
+        if(inputName==""){
+            document.getElementById("nameerror").innerHTML="Username is required";
+        }
+        if(inputPassword==""){
+            document.getElementById("pwderror").innerHTML="Password is required";
+        }
+       }
     </script>
 </body>
 </html>
